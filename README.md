@@ -1,4 +1,4 @@
-*c# program to print the statement Hello World*<br>
+*c# program to print the statement Hello World*
 
 
 using System;<br>
@@ -17,7 +17,7 @@ namespace ConsoleApp3<br>
 <br>
 <br>
 <br>
-*1.c# program to print a Binary Triangle*<br>
+*1.c# program to print a Binary Triangle*
 
 using System;<br>
 namespace  Excercises<br>
@@ -50,7 +50,7 @@ namespace  Excercises<br>
 <br>
 <br>
 <br>
-*2.c# program to check whether the entered number is a Amicable number or not*<br>
+*2.c# program to check whether the entered number is a Amicable number or not*
 
 using System;<br>
 namespace AmicableConsoleApp1<br>
