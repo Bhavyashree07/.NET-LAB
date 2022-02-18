@@ -90,10 +90,7 @@ namespace AmicableConsoleApp1<br>
         }<br>
     }<br>
 }<br>
-<br>
-<br>
-<br>
-<br>
+
 ![image](https://user-images.githubusercontent.com/97940064/154623079-566ffa56-09bf-4dce-a892-e96992073f1c.png)
 <br>
 <br>
@@ -200,9 +197,7 @@ namespace DetailsConsoleApp1<br>
      }<br>
     }<br>
 }<br>
-<br>
-<br>
-<br>
+
 ![image](https://user-images.githubusercontent.com/97940064/154624792-91a7f142-cf54-44da-9b9c-6169de930154.png)
 <br>
 <br>
