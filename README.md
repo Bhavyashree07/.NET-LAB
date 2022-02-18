@@ -1,4 +1,4 @@
-/*c# program to print the statement Hello World */<br>
+*c# program to print the statement Hello World *<br>
 
 
 using System;<br>
@@ -17,7 +17,7 @@ namespace ConsoleApp3<br>
 <br>
 <br>
 <br>
-/*c# program to print a Binary Triangle*/<br>
+*c# program to print a Binary Triangle*<br>
 
 using System;<br>
 namespace  Excercises<br>
