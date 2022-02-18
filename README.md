@@ -1,5 +1,7 @@
-using System;<br>
+/*c# program to print the statement Hello World */<br>
 
+
+using System;<br>
 namespace ConsoleApp3<br>
 {<br>
     class Program<br>
@@ -15,8 +17,9 @@ namespace ConsoleApp3<br>
 <br>
 <br>
 <br>
-using System;<br>
+/*c# program to print a Binary Triangle*/<br>
 
+using System;<br>
 namespace  Excercises<br>
 {<br>
     class BinaryTriangle<br>
