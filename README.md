@@ -200,4 +200,12 @@ namespace DetailsConsoleApp1<br>
      }<br>
     }<br>
 }<br>
+<br>
+<br>
+<br>
+![image](https://user-images.githubusercontent.com/97940064/154624792-91a7f142-cf54-44da-9b9c-6169de930154.png)
+<br>
+<br>
+<br>
+<br>
 
