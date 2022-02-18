@@ -384,7 +384,115 @@ namespace Exercise8<br>
 }<br>
 
 ![image](https://user-images.githubusercontent.com/97940064/154633658-65aa579f-d90c-4375-ba56-9212fda3c2b9.png)
+<br>
+<br>
+<br>
+<br>
+*9.c# program that benchmarks 2D,jagged array allocation*
+
+using System;<br>
+using System.Diagnostics;<br>
+namespace Exercise9<br>
+{<br>
+    class BenchmarkAllocation<br>
+    {<br>
+        const int max= 100000;<br>
+        static void Main(string[] args)<br>
+        {<br>
+            var Arr2D = new int[100, 100];<br>
+            var ArrJagged = new int[100][];<br>
+            for(int i=0;i<100;i++)<br>
+            {<br>
+                ArrJagged[i] = new int[100];<br>
+            }<br>
+            var Stopwatch2D = Stopwatch.StartNew();<br>
+            for (int i = 0; i <max; i++)<br>
+            {<br>
+                for (int j = 0; j < 100; j++)<br>
+                {<br>
+                    for (int k = 0; k < 100; k++)<br>
+                    {<br>
+                        Arr2D[j, k] = k;<br>
+                    }<br>
+                }<br>
+            }<br>
+            Stopwatch2D.Stop();<br>
+            var StopwatchJagged = Stopwatch.StartNew();<br>
+            for(int i=0;i<max;i++)<br>
+            {<br>
+                for(int j=0;j<100;j++)<br>
+                {<br>
+                    for(int k=0;k<100;k++)<br>
+                    {<br>
+                        ArrJagged[j][k] = k;<br>
+                     }<br>
+                }<br>
+            }<br>
+            StopwatchJagged.Stop();<br>
+            Console.Write("\nTime taken for allocation in case of 2D array:");<br>
+            Console.WriteLine(Stopwatch2D.Elapsed.TotalMilliseconds+ "milliseconds");<br>
+            Console.Write("\nTime taken for alocation in case of Jagged array:");
+            Console.WriteLine(StopwatchJagged.Elapsed.TotalMilliseconds + "milliseconds");
+        }<br>
+    }<br>
+}<br>
+  
+  ![image](https://user-images.githubusercontent.com/97940064/154634839-d16e7d45-5f35-4fb9-915d-933cfe196eb1.png)
  <br>
+<br>
+<br>
+<br>
+*10.c# program to find the sum of the values on Diagonal of the matrix*
+
+using System;<br>
+namespace Exercise10<br>
+{<br>
+    class SumOfDiagonals<br>
+    {<br>
+        static void Main(string[] args)<br>
+        {<br>
+            int MaxRow, MaxCol, Sum = 0;<br>
+            int[,] Matrix;<br>
+            Console.WriteLine("\n----SUM OF DIAGONAL OF A MATRIX----\n");<br>
+            Console.Write("\nEnter the number of rows:");<br>
+            MaxRow = Convert.ToInt32(Console.ReadLine());<br>
+            Console.Write("\nEnter the number of columns:");<br>
+            MaxCol = Convert.ToInt32(Console.ReadLine());<br>
+            if (MaxRow != MaxCol)<br>
+            {<br>
+                Console.WriteLine("\n The dimensions entered are not of Square matrix.");<br>
+                Console.WriteLine("\nExisting the program");<br>
+                return;<br>
+            }<br>
+            Matrix = new int[MaxRow, MaxCol];<br>
+            for (int i = 0; i < MaxRow; i++)<br>
+            {<br>
+                for (int j = 0; j < MaxCol; j++)<br>
+                {<br>
+                    Console.Write("\nEnter the ({0},{1})th element of the matrix:", (i + 1), (j + 1));<br>
+                    Matrix[i, j] = Convert.ToInt32(Console.ReadLine());<br>
+                }<br>
+            }<br>
+            Console.WriteLine("\nthe entered matrix is:");<br>
+            for (int i = 0; i < MaxRow; i++)<br>
+            {<br>
+                for (int j = 0; j < MaxCol; j++)<br>
+                {<br>
+                    Console.Write(" " + Matrix[i, j]);<br>
+                    if (i == j)<br>
+                    {<br>
+                        Sum += Matrix[i, j];<br>
+                    }<br>
+                }<br>
+                Console.WriteLine();<br>
+                }<br>
+            Console.WriteLine("\n The Sum of Diagonal is" + Sum);<br>
+        }<br>
+    }<br>
+}<br>
+
+![image](https://user-images.githubusercontent.com/97940064/154635722-34dfb8d7-4f17-48a1-a1a0-0f17205dd4ae.png)
+<br>
 <br>
 <br>
 <br>
