@@ -575,6 +575,10 @@ namespace Exercise11<br>
     }<br>
 }<br>
 
+![image](https://user-images.githubusercontent.com/97940064/154637851-9934adac-9e51-450f-8b2c-9e80b1b4cae3.png)
+![image](https://user-images.githubusercontent.com/97940064/154638054-85886495-247a-439e-9b75-f8e568370250.png)
+![image](https://user-images.githubusercontent.com/97940064/154638197-4f789b00-6977-479f-a0c5-cc587300df25.png)
+
 
 
 
