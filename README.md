@@ -628,6 +628,67 @@ namespace Exercise12<br>
 ![image](https://user-images.githubusercontent.com/97940064/155665386-11531b8f-d6da-4f7d-ad25-9a8c4395dad7.png)
 
 
+*13.c# Program to implement IComparable Interface *
+
+using System;<br>
+namespace Exercise13<br>
+{<br>
+    class Fraction : IComparable<br>
+    {<br>
+        int z, n; <br>
+        public Fraction(int z,int n)<br>
+        {<br>
+            this.z = z;<br>
+            this.n = n;<br>
+        }<br>
+        public static Fraction operator +(Fraction a, Fraction b)<br>
+        {<br>
+            return new Fraction(a.z * b.n + a.n * b.z , a.n * b.n);<br>
+        }<br>
+        public static Fraction operator*(Fraction a,Fraction b)<br>
+        {<br>
+            return new Fraction(a.z * b.z, a.n * b.n);<br>
+        }<br>
+        public int CompareTo(object obj)<br>
+        {<br>
+            Fraction f = (Fraction)obj;<br>
+            if ((float)z / n < (float)f.z / f.n)<br>
+                return -1;<br>
+            else if ((float)z / n > (float)f.z / f.n)<br>
+                return 1;<br>
+            else<br>
+                return 0;<br>
+        }<br>
+        public override string ToString()<br>
+        {<br>
+              return z+"/"+n;<br>
+         }<br>
+        class ICompInterface<br>
+        {<br>
+            public static void Main()<br>
+            {<br>
+                Fraction[] a =<br>
+                {<br>
+                    new Fraction(5 ,2),<br>
+                    new Fraction(29, 6),<br>
+                    new Fraction(4, 5),<br>
+                    new Fraction(10,8),<br>
+                    new Fraction(34,7)<br>
+                };<br>
+                Array.Sort(a);<br>
+                Console.WriteLine("Implementing the IComparable Interface in " + "Displaying Fraction:");<br>
+                foreach(Fraction f in a)<br>
+                {<br>
+                    Console.WriteLine(f + " ");<br>
+                }<br>
+                Console.WriteLine();<br>
+                Console.ReadLine();<br>
+            }<br>
+        }<br>
+     }<br>
+}<br>
+
+
 
 
 
