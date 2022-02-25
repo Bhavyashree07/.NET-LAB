@@ -578,6 +578,11 @@ namespace Exercise11<br>
 ![image](https://user-images.githubusercontent.com/97940064/155662119-7aa86a56-2b81-47a1-bb45-5009b4f0d8a8.png)
 ![image](https://user-images.githubusercontent.com/97940064/155662265-a1368d12-00ab-4be8-adb4-ce10b3f93da4.png)
 ![image](https://user-images.githubusercontent.com/97940064/155662386-b88ae40c-68fc-4ff0-9408-d14305dbf0a4.png)
+<br>
+<br>
+<br>
+<br>
+*12.c# program to perform File Comparison*
 
 
 
