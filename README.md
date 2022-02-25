@@ -785,5 +785,31 @@ public class Age<br>
 ![image](https://user-images.githubusercontent.com/97940064/155670685-5efbd4d3-78af-43c7-b1ae-c0a5f7fca1d9.png)
 
 
+*16.c# Program to print fibonacci series without using recursion *
 
+using System;<br>
+namespace exercises<br>
+{<br>
+    public class FibonacciExample<br>
+    {<br>
+        public static void Main(string[] args)<br>
+        {<br>
+            int n1 = 0, n2 = 1, n3, i, number;<br>
+            Console.Write("Enter the number of elements: ");<br>
+            number = int.Parse(Console.ReadLine());<br>
+            Console.Write(n1 + " " + n2 + " "); <br>
+            for (i = 2; i < number; ++i) <br>  
+            {<br>
+                n3 = n1 + n2;<br>
+                Console.Write(n3 + " ");<br>
+                n1 = n2;<br>
+                n2 = n3;<br>
+            }<br>
+        }<br>
+    }<br>
+}<br>
+
+![image](https://user-images.githubusercontent.com/97940064/155671859-79412856-ead9-441c-bd32-469b75f00b74.png)
+
+    
 
