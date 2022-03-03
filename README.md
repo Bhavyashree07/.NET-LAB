@@ -730,8 +730,9 @@ namespace Exercises<br>
     }<br>
 }<br>
 
-
 ![image](https://user-images.githubusercontent.com/97940064/155669545-f4a95734-8501-42ec-bb26-e0ab94a3b53c.png)
+
+
 
 
 *15.c# Program to demonstrate error handling using Try , Catch and Finally block*
@@ -785,6 +786,8 @@ public class Age<br>
 ![image](https://user-images.githubusercontent.com/97940064/155670685-5efbd4d3-78af-43c7-b1ae-c0a5f7fca1d9.png)
 
 
+
+
 *16.c# Program to print fibonacci series without using recursion *
 
 using System;<br>
@@ -810,6 +813,8 @@ namespace exercises<br>
 }<br>
 
 ![image](https://user-images.githubusercontent.com/97940064/155671859-79412856-ead9-441c-bd32-469b75f00b74.png)
+
+
 
 
 *17.c# program to check prime number*
@@ -941,6 +946,33 @@ public class SumExample<br>
     }<br>
 }<br>
 ![image](https://user-images.githubusercontent.com/97940064/156504443-3923c4cc-fbdd-470d-bbf0-ad7e94a59bca.png)
+
+
+
+
+*22. C# program to reverse a given number*
+
+using System;<br>
+public class ReverseExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, reverse = 0, rem;<br>
+        Console.Write("Enter a number: ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        while (n != 0)<br>
+        {<br>
+            rem = n % 10;<br>
+            reverse = reverse * 10 + rem;<br>
+            n /= 10;<br>
+        }<br>
+        Console.Write("Reversed Number: " + reverse);<br>
+    }<br>
+}<br>
+
+
+![image](https://user-images.githubusercontent.com/97940064/156505005-afb82a32-014e-4faf-b1da-b1dc6a8ce47b.png)
+
 
 
 
