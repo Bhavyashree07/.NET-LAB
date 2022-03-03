@@ -812,7 +812,7 @@ namespace exercises<br>
 ![image](https://user-images.githubusercontent.com/97940064/155671859-79412856-ead9-441c-bd32-469b75f00b74.png)
 
 
-*c# program to check prime number*
+*17.c# program to check prime number*
 
 using System;<br>
 public class PrimeNumberExample<br>
@@ -842,11 +842,11 @@ public class PrimeNumberExample<br>
 
 
 
-c# program to check whether the given number is palindrome or not*
+*18.c# program to check whether the given number is palindrome or not*
 
   using System;<br>
   public class PalindromeExample<br>
-{<br>
+  {<br>
     public static void Main(string[] args)<br>
     {
         int n, r, sum = 0, temp;<br>
