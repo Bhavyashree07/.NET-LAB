@@ -893,8 +893,7 @@ public class FactorialExample<br>
 
 
 
-
-*20.C# program to print Sum of digits*
+*20.c# program to check Armstrong number*
 
 using System;<br>
 public class ArmstrongExample<br>
@@ -919,6 +918,50 @@ public class ArmstrongExample<br>
 }<br>
 ![image](https://user-images.githubusercontent.com/97940064/156503052-809960f9-c18f-41a1-a140-e008fb0525a5.png)
 ![image](https://user-images.githubusercontent.com/97940064/156503273-d9163dac-e63f-4306-ad05-b0629d08112c.png)
+
+
+
+*21.C# program to print Sum of digits*
+
+using System;<br>
+public class SumExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, sum = 0, m;<br>
+        Console.Write("Enter a number: ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        while (n > 0)<br>
+        {<br>
+            m = n % 10;<br>
+            sum = sum + m;<br>
+            n = n / 10;<br>
+        }<br>
+        Console.Write("Sum is= " + sum);<br>
+    }<br>
+}<br>
+![image](https://user-images.githubusercontent.com/97940064/156504443-3923c4cc-fbdd-470d-bbf0-ad7e94a59bca.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
