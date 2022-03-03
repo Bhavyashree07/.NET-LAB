@@ -870,3 +870,53 @@ public class PrimeNumberExample<br>
 
 
 
+
+*19.C# program to print factorial of a number*
+
+using System;<br>
+public class FactorialExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int i, fact = 1, number;<br>
+        Console.Write("Enter any Number: ");<br>
+        number = int.Parse(Console.ReadLine());<br>
+        for (i = 1; i <= number; i++)<br>
+        {<br>
+            fact = fact * i;<br>
+        }<br>
+        Console.Write("Factorial of " + number + " is: " + fact);<br>
+    }<br>
+}<br>
+
+![image](https://user-images.githubusercontent.com/97940064/156502298-e41a7cf1-e6a1-444e-82ce-491f031d143f.png)
+
+
+
+
+*20.C# program to print Sum of digits*
+
+using System;<br>
+public class ArmstrongExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, r, sum = 0, temp;<br>
+        Console.Write("Enter the Number= ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        temp = n;<br>
+        while (n > 0)<br>
+        {<br>
+            r = n % 10;<br>
+            sum = sum + (r * r * r);<br>
+            n = n / 10;<br>
+        }<br>
+        if (temp == sum)<br>
+            Console.Write("Armstrong Number.");<br>
+        else<br>
+            Console.Write("Not Armstrong Number.");<br>
+    }<br>
+}<br>
+
+
+
