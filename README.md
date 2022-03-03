@@ -917,6 +917,9 @@ public class ArmstrongExample<br>
             Console.Write("Not Armstrong Number.");<br>
     }<br>
 }<br>
+![image](https://user-images.githubusercontent.com/97940064/156503052-809960f9-c18f-41a1-a140-e008fb0525a5.png)
+![image](https://user-images.githubusercontent.com/97940064/156503273-d9163dac-e63f-4306-ad05-b0629d08112c.png)
+
 
 
 
