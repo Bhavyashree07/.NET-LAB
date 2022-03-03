@@ -837,6 +837,8 @@ public class PrimeNumberExample<br>
     }<br>
 }<br>
 
+![image](https://user-images.githubusercontent.com/97940064/156499333-46670d4e-afa3-4a63-a791-47ebe6d7cc6d.png)
+![image](https://user-images.githubusercontent.com/97940064/156499522-253afbd5-459f-44ef-a943-da3a3a238183.png)
 
     
 
