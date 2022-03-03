@@ -814,28 +814,28 @@ namespace exercises<br>
 
 *c# program to check prime number*
 
-using System;
-public class PrimeNumberExample
-{
-    public static void Main(string[] args)
-    {
-        int n, i, m = 0, flag = 0;
-        Console.Write("Enter the Number to check Prime: ");
-        n = int.Parse(Console.ReadLine());
-        m = n / 2;
-        for (i = 2; i <= m; i++)
-        {
-            if (n % i == 0)
-            {
-                Console.Write("Number is not Prime.");
-                flag = 1;
-                break;
-            }
-        }
-        if (flag == 0)
-            Console.Write("Number is Prime.");
-    }
-}
+using System;<br>
+public class PrimeNumberExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, i, m = 0, flag = 0;<br>
+        Console.Write("Enter the Number to check Prime: ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        m = n / 2;<br>
+        for (i = 2; i <= m; i++)<br>
+        {<br>
+            if (n % i == 0)<br>
+            {<br>
+                Console.Write("Number is not Prime.");<br>
+                flag = 1;<br>
+                break;<br>
+            }<br>
+        }<br>
+        if (flag == 0)<br>
+            Console.Write("Number is Prime.");<br>
+    }<br>
+}<br>
 
 
     
