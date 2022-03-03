@@ -621,10 +621,12 @@ namespace Exercise12<br>
 ![image](https://user-images.githubusercontent.com/97940064/155664227-37ef34d5-58da-465d-9312-c3d482d79b23.png)
 ![image](https://user-images.githubusercontent.com/97940064/155664322-fc8f7de8-d259-458c-9764-b6e8f312cbe1.png)
 
-
-
 ![image](https://user-images.githubusercontent.com/97940064/155665201-635dd611-62dd-488a-b14d-60af4968b09f.png)
 ![image](https://user-images.githubusercontent.com/97940064/155665386-11531b8f-d6da-4f7d-ad25-9a8c4395dad7.png)
+<br>
+<br>
+<br>
+<br>
 
 
 *13.c# Program to implement IComparable Interface *
