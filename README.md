@@ -1,6 +1,5 @@
 *c# program to print the statement Hello World*
 
-
 using System;<br>
 namespace ConsoleApp3<br>
 {<br>
@@ -688,7 +687,6 @@ namespace Exercise13<br>
      }<br>
 }<br>
 
-
 ![image](https://user-images.githubusercontent.com/97940064/155667049-400bbd1e-82e2-4ca4-9efc-9edf65c040b3.png)
 <br>
 <br>
@@ -731,9 +729,10 @@ namespace Exercises<br>
 }<br>
 
 ![image](https://user-images.githubusercontent.com/97940064/155669545-f4a95734-8501-42ec-bb26-e0ab94a3b53c.png)
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 *15.c# Program to demonstrate error handling using Try , Catch and Finally block*
  
@@ -781,12 +780,11 @@ public class Age<br>
         }<br>
     }<br>
 }<br>
-
-
 ![image](https://user-images.githubusercontent.com/97940064/155670685-5efbd4d3-78af-43c7-b1ae-c0a5f7fca1d9.png)
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 *16.c# Program to print fibonacci series without using recursion *
 
@@ -813,9 +811,10 @@ namespace exercises<br>
 }<br>
 
 ![image](https://user-images.githubusercontent.com/97940064/155671859-79412856-ead9-441c-bd32-469b75f00b74.png)
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 *17.c# program to check prime number*
 
@@ -844,8 +843,10 @@ public class PrimeNumberExample<br>
 
 ![image](https://user-images.githubusercontent.com/97940064/156499333-46670d4e-afa3-4a63-a791-47ebe6d7cc6d.png)
 ![image](https://user-images.githubusercontent.com/97940064/156499522-253afbd5-459f-44ef-a943-da3a3a238183.png)
-
-
+<br>
+<br>
+<br>
+<br>
 
 *18.c# program to check whether the given number is palindrome or not*
 
@@ -872,9 +873,10 @@ public class PrimeNumberExample<br>
 }<br>
 ![image](https://user-images.githubusercontent.com/97940064/156501777-2b41af05-8286-43eb-a85a-c8843789bd83.png)
 ![image](https://user-images.githubusercontent.com/97940064/156501874-88e9a303-bcfd-4790-8837-52a2e03becfc.png)
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 *19.C# program to print factorial of a number*
 
@@ -895,8 +897,10 @@ public class FactorialExample<br>
 }<br>
 
 ![image](https://user-images.githubusercontent.com/97940064/156502298-e41a7cf1-e6a1-444e-82ce-491f031d143f.png)
-
-
+<br>
+<br>
+<br>
+<br>
 
 *20.c# program to check Armstrong number*
 
@@ -923,8 +927,10 @@ public class ArmstrongExample<br>
 }<br>
 ![image](https://user-images.githubusercontent.com/97940064/156503052-809960f9-c18f-41a1-a140-e008fb0525a5.png)
 ![image](https://user-images.githubusercontent.com/97940064/156503273-d9163dac-e63f-4306-ad05-b0629d08112c.png)
-
-
+<br>
+<br>
+<br>
+<br>
 
 *21.C# program to print Sum of digits*
 
@@ -946,9 +952,10 @@ public class SumExample<br>
     }<br>
 }<br>
 ![image](https://user-images.githubusercontent.com/97940064/156504443-3923c4cc-fbdd-470d-bbf0-ad7e94a59bca.png)
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 *22. C# program to reverse a given number*
 
@@ -969,9 +976,7 @@ public class ReverseExample<br>
         Console.Write("Reversed Number: " + reverse);<br>
     }<br>
 }<br>
-
-
-![image](https://user-images.githubusercontent.com/97940064/156505005-afb82a32-014e-4faf-b1da-b1dc6a8ce47b.png)
+![image](https://user-images.githubusercontent.com/97940064/156505392-d6f0a8f6-e837-4bc7-a671-cbf3da5374f7.png)
 
 
 
