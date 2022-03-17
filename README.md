@@ -1115,8 +1115,41 @@ private void btnrev_Click(object sender, EventArgs e)<br>
 ![image](https://user-images.githubusercontent.com/97940064/158742466-ab988232-df3e-4ab7-8e5f-4e7c912f20c5.png)
 
 
+*C# program to create a Progress Bar Control*
 
-
+using System; <br>
+using System.ComponentModel;<br>  
+using System.Threading;<br>  
+using System.Windows.Forms;<br>  
+namespace WindowsFormsApplication1<br>  
+{<br>  
+ public partial class Form1: Form<br>  
+ {<br>  
+ public Form1() <br> 
+ {<br>  
+ InitializeComponent();<br>  
+ }<br> 
+} <br>
+private void Form1_Load(object sender, System.EventArgs e)<br>   
+{<br>  
+backgroundWorker1.WorkerReportsProgress = true;<br> 
+ backgroundWorker1.RunWorkerAsync();<br>  
+ }<br> 
+private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)<br>
+{<br>  
+ for (int i = 1; i <= 100; i++)<br>  
+ { <br> 
+ Thread.Sleep(50);<br>  
+ backgroundWorker1.ReportProgress(i);<br> 
+ } <br> 
+ } <br> 
+ private void backgroundWorker1_ProgressChanged(object sender,   ProgressChangedEventArgs e) <br> 
+ { <br> 
+ progressBar1.Value = e.ProgressPercentage;<br>  
+ this.Text = "Progress: " + e.ProgressPercentage.ToString() + "%";<br> 
+ }<br>  
+ }<br>  
+}<br> 
 
 
 
