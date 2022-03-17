@@ -1059,7 +1059,63 @@ namespace WinFormsApp1  <br>
 
 
 
+*c# program to perform reversal,Paddong and Trimming operations on string*
 
+using System;<br>
+using System.Collections.Generic;<br>
+using System.ComponentModel;<br>
+using System.Data;<br>
+using System.Drawing;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading.Tasks;<br>
+using System.Windows.Forms;<br>
+
+namespace WindowsFormsApp2<br>
+{<br>
+    public partial class Form1 : Form<br>
+    {<br>
+        public Form1()<br>
+        {<br>
+            InitializeComponent();<br>
+        }<br>
+
+                private void btnrev_Click(object sender, EventArgs e)<br>
+        {<br>
+            string inputString, revstr = "";<br>
+            int Length;<br>
+            inputString = txtInput.Text;<br>
+            Length = inputString.Length - 1;<br>
+            while (Length >= 0)<br>
+            {<br>
+                revstr = revstr + inputString[Length];<br>
+                Length--;<br>
+            }<br>
+            MessageBox.Show("Reverse String Is : " + revstr, "Result");<br>
+        }<br>
+
+        private void btntrim_Click(object sender, EventArgs e)<br>
+        {<br>
+            string inputString;<br>
+            inputString = txtInput.Text;<br>
+            MessageBox.Show("The String After Trimming : " + inputString.Trim(), "Result");<br>
+        }<br>
+
+        private void btnpad_Click(object sender, EventArgs e)<br>
+        {<br>
+            string inputString;<br>
+            inputString = txtInput.Text;<br>
+            inputString = inputString.PadLeft(10, '*');<br>
+            inputString = inputString.PadRight(15, '*');<br>
+            MessageBox.Show("String After Padding : " + inputString, "Result");<br>
+        }<br>
+    }<br>
+}<br>
+
+
+![image](https://user-images.githubusercontent.com/97940064/158742248-b95cec66-bb08-45a7-b291-fe0d30c1b0cd.png)
+![image](https://user-images.githubusercontent.com/97940064/158742359-561c7407-040b-4772-a62e-79385488270f.png)
+![image](https://user-images.githubusercontent.com/97940064/158742466-ab988232-df3e-4ab7-8e5f-4e7c912f20c5.png)
 
 
 
