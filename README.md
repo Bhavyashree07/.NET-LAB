@@ -1152,7 +1152,9 @@ private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)<br>
 }<br> 
 
 OUTPUT:
-![image](https://user-images.githubusercontent.com/97940064/158745932-aa5452b7-08f0-47cb-9dd7-2e45f3dd33b2.png)Develop a winform application to create flat clock
+
+![image](https://user-images.githubusercontent.com/97940064/158745932-aa5452b7-08f0-47cb-9dd7-2e45f3dd33b2.png)
+
 
 *26.Develop a winform application to create flat clock*
 
@@ -1174,26 +1176,23 @@ namespace Flat_Clock<br>
         {<br>
             InitializeComponent();<br>
         }<br>
-
         private void Form1_Load(object sender, EventArgs e)<br>
         {<br>
             System.Timers.Timer timer = new System.Timers.Timer();<br>
-            timer.Interval = 1000;//1s 
-            timer.Elapsed += Timer_Elapsed;
-            timer.Start();
-
-        }
-        private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
-        {
-            circularProgressBar1.Invoke((MethodInvoker)delegate
-            {
-                circularProgressBar1.Text = DateTime.Now.ToString("hh:mm:ss");
-                circularProgressBar1.SubscriptText = DateTime.Now.ToString("tt");//AM or PM  }); 
-
-            });
-        }
-    }
-}
+            timer.Interval = 1000;//1s <br>
+            timer.Elapsed += Timer_Elapsed;<br>
+            timer.Start();<br>
+        }<br>
+        private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)<br>
+        {<br>
+            circularProgressBar1.Invoke((MethodInvoker)delegate<br>
+            {<br>
+                circularProgressBar1.Text = DateTime.Now.ToString("hh:mm:ss");<br>
+                circularProgressBar1.SubscriptText = DateTime.Now.ToString("tt");//AM or PM  }); <br>
+            });<br>
+        }<br>
+    }<br>
+}<br>
 
 ![image](https://user-images.githubusercontent.com/97940064/158758052-ce487e76-186f-4d28-88eb-5d433a4b1a13.png)
 
@@ -1310,6 +1309,7 @@ namespace WindowsFormsApp2<br>
     }<br>
 }<br>
     
+![image](https://user-images.githubusercontent.com/97940064/159852445-72c56c93-7c93-4180-8552-47a0c463a07d.png)
 
 
 
