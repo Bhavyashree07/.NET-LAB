@@ -1917,6 +1917,106 @@ new PointF(x2, y2)<br>
     
     
 
+***************************************NOTEPAD**************************
 
+using System;<br>
+using System.Collections.Generic;<br>
+using System.ComponentModel;<br>
+using System.Data;<br>
+using System.Drawing;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading.Tasks;<br>
+using System.Windows.Forms;<br>
+namespace notepad<br>
+{<br>
+    public partial class Form1 : Form<br>
+    {<br>
+        private string fileName;<br>
+        private RichTextBox txtContent;<br>
+        private ToolBar toolBar;<br>
+        public Form1()<br>
+        {<br>
+            fileName = null;<br>
+            initializeComponents();<br>
+        }<br>
+        private void Form1_Load(object sender, EventArgs e)<br>
+        {<br>
+        }<br>
+        void initializeComponents()<br>
+        {<br>
+            this.Text = "My notepad";<br>
+            this.MinimumSize = new Size(600, 450);<br>
+            this.FormClosing += new FormClosingEventHandler(NotepadClosing); this.MaximizeBox = true;<br>
+            toolBar = new ToolBar();<br>
+            toolBar.Font = new Font("Arial", 16);<br>
+            toolBar.Padding = new Padding(4);<br>
+            toolBar.ButtonClick += new ToolBarButtonClickEventHandler(toolBarClicked);<br>
+            ToolBarButton toolBarButton1 = new ToolBarButton();<br>
+            ToolBarButton toolBarButton2 = new ToolBarButton();<br>
+            ToolBarButton toolBarButton3 = new ToolBarButton();<br>
+            toolBarButton1.Text = "New";<br>
+            toolBarButton2.Text = "Open";<br>
+            toolBarButton3.Text = "Save";<br>
+            toolBar.Buttons.Add(toolBarButton1);<br>
+            toolBar.Buttons.Add(toolBarButton2);<br>
+            toolBar.Buttons.Add(toolBarButton3);<br>
+            txtContent = new RichTextBox();<br>
+            txtContent.Size = this.ClientSize;<br>
+            txtContent.Height -= toolBar.Height;<br>
+            txtContent.Top = toolBar.Height;<br>
+            txtContent.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Bottom;<br>
+            txtContent.Font = new Font("Arial", 16);<br>
+            txtContent.AcceptsTab = true;<br>
+            txtContent.Padding = new Padding(8);<br>
+            this.Controls.Add(toolBar);<br>
+            this.Controls.Add(txtContent);
+        }<br><br><br>
+        private void toolBarClicked(Object sender, ToolBarButtonClickEventArgs e)<br><br><br>
+        {<br><br><br>
+            saveFile();<br><br><br>
+            switch (toolBar.Buttons.IndexOf(e.Button))<br><br><br>
+            {<br><br><br>
+                case 0:<br><br><br>
+                    this.Text += "My notepad";<br><br><br>
+                    txtContent.Text = string.Empty;<br><br><br>
+                    fileName = null;<br><br><br>
+                    break;<br><br><br>
+                case 1:<br><br><br>
+                    OpenFileDialog openDlg = new OpenFileDialog();<br><br><br>
+                    if (DialogResult.OK == openDlg.ShowDialog())<br><br><br>
+                    {<br><br><br>
+                        fileName = openDlg.FileName; txtContent.LoadFile(fileName); this.Text = "My notepad " + fileName;<br><br><br>
+                    }<br><br><br>
+                    break;<br><br><br>
+            }<br><br>
+        }<br><br>
+        void saveFile()<br><br>
+        {<br><br>
+            if (fileName == null)<br><br>
+            {<br><br>
+                SaveFileDialog saveDlg = new SaveFileDialog();<br><br>
+                if (DialogResult.OK == saveDlg.ShowDialog())<br><br>
+                {<br><br>
+                    fileName = saveDlg.FileName;<br><br>
+                    this.Text += " " + fileName;<br><br>
+                }<br><br>
+            }<br><br>
+            else<br><br>
+            {<br><br>
+                txtContent.SaveFile(fileName, RichTextBoxStreamType.RichText);<br><br>
+            }<br><br>
+        }<br><br>
+        private void NotepadClosing(Object sender, FormClosingEventArgs e)<br><br>
+        {<br><br>
+            saveFile();<br><br>
+        }<br><br>
+        /* static void Main(String[] args)<br><br>
+         {<br>
+             Application.Run(new Form());<br>
+         }*/<br>
+    }<br>
+}<br>
 
-
+    
+    ![image](https://user-images.githubusercontent.com/97940064/161210268-ea31beda-fce3-4b6b-9a9f-a0809bf2b2c3.png)
