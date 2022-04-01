@@ -1860,16 +1860,14 @@ else<br>
             }<br>
             int maxHeight = (lSize.Height < rSize.Height) ? rSize.Height : lSize.Height;<br>
             if (maxHeight > 0) maxHeight += 35;<br>
-        Size resultSize = new Size(lSize.Width + rSize.Width, nodeBg.Size.Height +
-        maxHeight);<br>
+        Size resultSize = new Size(lSize.Width + rSize.Width, nodeBg.Size.Height + maxHeight);<br>
             Bitmap result = new Bitmap(resultSize.Width, resultSize.Height);<br>
             Graphics g = Graphics.FromImage(result);<br>
             g.SmoothingMode = SmoothingMode.HighQuality;<br>
             g.FillRectangle(Brushes.White, new Rectangle(new Point(0, 0), resultSize));<br>
             g.DrawImage(nodeBg, lSize.Width - nodeBg.Width / 2, 0);<br>
             string str = "" + value;<br>
-            g.DrawString(str, font, Brushes.Black, lSize.Width - nodeBg.Width / 2 + 7,
-            nodeBg.Height / 2f - 12);<br>
+            g.DrawString(str, font, Brushes.Black, lSize.Width - nodeBg.Width / 2 + 7, nodeBg.Height / 2f - 12);<br>
             Pen pen = new Pen(Brushes.Black, 1.2f);<br>
             float x1 = center;<br>
             float y1 = nodeBg.Height;<br>
