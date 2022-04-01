@@ -1557,571 +1557,298 @@ else<br>
                     else<br>
                     {<br>
                         Node node = right;<br>
-
                         while (node.left.left != null)<br>
-
                             node = node.left;<br>
-
                         Console.WriteLine("Node: " + node.value);<br>
-
                         this.value = node.left.value;<br>
-
                         Console.WriteLine("here");<br>
-
                         node.left = null;<br>
-
                     }<br>
-
                 }<br>
-
                 return true;<br>
-
             }<br>
-
             return false;<br>
-
         }<br>
-
         public Image Draw()<br>
             Size lSize = new Size(nodeBg.Width / 2, 0);
                 else<br>
-
-                {<br>
-
-                    if (right.left == null)<br>
-
+                {<br>             
+                if (right.left == null)<br>
                     {<br>
-
                         right.left = left;<br>
-
                         if (isLeft) parent.left = right;<br>
-
                         else<br>
-
                     parent.right = right;<br>
-
                         if (root == this)<br>
-
                             root = right;<br>
-
                     }<br>
-
                     else<br>
-
                     {<br>
-
                         Node node = right;<br>
-
                         while (node.left.left != null)<br>
-
                             node = node.left;<br>
-
                         Console.WriteLine("Node: " + node.value);<br>
-
                         this.value = node.left.value;<br>
-
                         Console.WriteLine("here");<br>
-
                         node.left = null;<br>
-
                     }<br>
-
                 }<br>
-
                 return true;<br>
-
             }<br>
-
             return false;<br>
-
         }<br>
-
         public Image Draw()<br>
             Size rSize = new Size(nodeBg.Width / 2, 0);
                 else<br>
-
                 {<br>
-
                     if (right.left == null)<br>
-
                     {<br>
-
                         right.left = left;<br>
-
                         if (isLeft) parent.left = right;<br>
-
                         else<br>
-
                     parent.right = right;<br>
-
                         if (root == this)<br>
-
                             root = right;<br>
-
                     }<br>
-
                     else<br>
-
                     {<br>
-
                         Node node = right;<br>
-
                         while (node.left.left != null)<br>
-
                             node = node.left;<br>
-
                         Console.WriteLine("Node: " + node.value);<br>
-
                         this.value = node.left.value;<br>
-
                         Console.WriteLine("here");<br>
-
                         node.left = null;<br>
-
                     }<br>
-
                 }<br>
-
                 return true;<br>
-
             }<br>
-
             return false;<br>
-
         }<br>
-
         public Image Draw()<br>
             Image lNodeImg = null;
                 else<br>
-
                 {<br>
-
                     if (right.left == null)<br>
-
                     {<br>
-
                         right.left = left;<br>
-
                         if (isLeft) parent.left = right;<br>
-
                         else<br>
-
                     parent.right = right;<br>
-
                         if (root == this)<br>
-
                             root = right;<br>
-
                     }<br>
-
                     else<br>
-
                     {<br>
-
                         Node node = right;<br>
-
                         while (node.left.left != null)<br>
-
                             node = node.left;<br>
-
                         Console.WriteLine("Node: " + node.value);<br>
-
                         this.value = node.left.value;<br>
-
                         Console.WriteLine("here");<br>
-
                         node.left = null;<br>
-
                     }<br>
-
                 }<br>
-
                 return true;<br>
-
             }<br>
-
             return false;<br>
-
         }<br>
-
         public Image Draw()<br>
             Image rNodeImg = null;
                 else<br>
-
                 {<br>
-
                     if (right.left == null)<br>
-
                     {<br>
-
                         right.left = left;<br>
-
                         if (isLeft) parent.left = right;<br>
-
                         else<br>
-
                     parent.right = right;<br>
-
                         if (root == this)<br>
-
                             root = right;<br>
-
                     }<br>
-
                     else<br>
-
                     {<br>
-
-                        Node node = right;<br>
-
+                       Node node = right;<br>
                         while (node.left.left != null)<br>
-
                             node = node.left;<br>
-
                         Console.WriteLine("Node: " + node.value);<br>
-
                         this.value = node.left.value;<br>
-
                         Console.WriteLine("here");<br>
-
                         node.left = null;<br>
-
                     }<br>
-
                 }<br>
-
                 return true;<br>
-
             }<br>
-
             return false;<br>
-
         }<br>
-
         public Image Draw()<br>
             int lCenter = 0, rCenter = 0;
                 else<br>
-
                 {<br>
-
-                    if (right.left == null)<br>
-
+                  if (right.left == null)<br>
                     {<br>
-
                         right.left = left;<br>
-
                         if (isLeft) parent.left = right;<br>
-
                         else<br>
-
                     parent.right = right;<br>
-
                         if (root == this)<br>
-
                             root = right;<br>
-
                     }<br>
-
                     else<br>
-
                     {<br>
-
                         Node node = right;<br>
-
                         while (node.left.left != null)<br>
-
                             node = node.left;<br>
-
                         Console.WriteLine("Node: " + node.value);<br>
-
                         this.value = node.left.value;<br>
-
                         Console.WriteLine("here");<br>
-
                         node.left = null;<br>
-
                     }<br>
-
                 }<br>
-
                 return true;<br>
-
-            }<br>
-
-            return false;<br>
-
+           }<br>
+           return false;<br>
         }<br>
-
         public Image Draw()<br>
             if (this.left != null)
                 else<br>
-
                 {<br>
-
                     if (right.left == null)<br>
-
                     {<br>
-
                         right.left = left;<br>
-
                         if (isLeft) parent.left = right;<br>
-
                         else<br>
-
                     parent.right = right;<br>
-
                         if (root == this)<br>
-
                             root = right;<br>
-
                     }<br>
-
                     else<br>
-
                     {<br>
-
                         Node node = right;<br>
-
                         while (node.left.left != null)<br>
-
                             node = node.left;<br>
-
                         Console.WriteLine("Node: " + node.value);<br>
-
                         this.value = node.left.value;<br>
-
                         Console.WriteLine("here");<br>
-
                         node.left = null;<br>
-
                     }<br>
-
-                }<br>
-
+               }<br>
                 return true;<br>
-
             }<br>
-
             return false;<br>
-
         }<br>
-
         public Image Draw()<br>
             {
                 else<br>
-
                 {<br>
-
                     if (right.left == null)<br>
-
                     {<br>
-
                         right.left = left;<br>
-
                         if (isLeft) parent.left = right;<br>
-
                         else<br>
-
                     parent.right = right;<br>
-
                         if (root == this)<br>
-
                             root = right;<br>
-
                     }<br>
-
                     else<br>
-
                     {<br>
-
                         Node node = right;<br>
-
                         while (node.left.left != null)<br>
-
                             node = node.left;<br>
-
                         Console.WriteLine("Node: " + node.value);<br>
-
                         this.value = node.left.value;<br>
-
                         Console.WriteLine("here");<br>
-
                         node.left = null;<br>
-
                     }<br>
-
                 }<br>
-
                 return true;<br>
-
             }<br>
-
             return false;<br>
-
         }<br>
-
         public Image Draw()<br>
-                lNodeImg = left.Draw();
+               lNodeImg = left.Draw();
                 else<br>
-
                 {<br>
-
                     if (right.left == null)<br>
-
                     {<br>
-
                         right.left = left;<br>
-
                         if (isLeft) parent.left = right;<br>
-
                         else<br>
-
                     parent.right = right;<br>
-
                         if (root == this)<br>
-
                             root = right;<br>
-
                     }<br>
-
                     else<br>
-
                     {<br>
-
                         Node node = right;<br>
-
                         while (node.left.left != null)<br>
-
                             node = node.left;<br>
-
                         Console.WriteLine("Node: " + node.value);<br>
-
                         this.value = node.left.value;<br>
-
-                        Console.WriteLine("here");<br>
-
+                       Console.WriteLine("here");<br>
                         node.left = null;<br>
-
                     }<br>
-
                 }<br>
-
                 return true;<br>
-
             }<br>
-
             return false;<br>
-
         }<br>
-
         public Image Draw()<br>
                 lSize = lNodeImg.Size;
                 else<br>
-
                 {<br>
-
                     if (right.left == null)<br>
-
                     {<br>
-
                         right.left = left;<br>
-
                         if (isLeft) parent.left = right;<br>
-
                         else<br>
-
                     parent.right = right;<br>
-
                         if (root == this)<br>
-
                             root = right;<br>
-
                     }<br>
-
                     else<br>
-
                     {<br>
-
                         Node node = right;<br>
-
                         while (node.left.left != null)<br>
-
                             node = node.left;<br>
-
                         Console.WriteLine("Node: " + node.value);<br>
-
                         this.value = node.left.value;<br>
-
                         Console.WriteLine("here");<br>
-
                         node.left = null;<br>
-
                     }<br>
-
                 }<br>
-
                 return true;<br>
-
             }<br>
-
             return false;<br>
-
         }<br>
-
         public Image Draw()<br>
                 this.center = lSize.Width;
                 else<br>
-
                 {<br>
-
                     if (right.left == null)<br>
-
                     {<br>
-
                         right.left = left;<br>
-
                         if (isLeft) parent.left = right;<br>
-
                         else<br>
-
                     parent.right = right;<br>
-
                         if (root == this)<br>
-
                             root = right;<br>
-
                     }<br>
-
                     else<br>
-
                     {<br>
-
                         Node node = right;<br>
-
                         while (node.left.left != null)<br>
-
                             node = node.left;<br>
-
                         Console.WriteLine("Node: " + node.value);<br>
-
                         this.value = node.left.value;<br>
-
                         Console.WriteLine("here");<br>
-
                         node.left = null;<br>
-
                     }<br>
-
                 }<br>
-
                 return true;<br>
-
             }<br>
-
             return false;<br>
-
         }<br>
-
         public Image Draw()<br>
                 lCenter = left.center;
             }
