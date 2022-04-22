@@ -1313,7 +1313,7 @@ namespace WindowsFormsApp2<br>
     
 ![image](https://user-images.githubusercontent.com/97940064/159852445-72c56c93-7c93-4180-8552-47a0c463a07d.png)
 
-
+30. Develop an application to construct a graphical binary tree where you need to create,add, search and remove nodes.
 
 using System;<br>
 using System.Collections.Generic;<br>
